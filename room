@@ -1,0 +1,8 @@
+room : <dimensions>
+response : {functions of (input)/(output)}
+gate : [fixed window for realizing state of room]
+
+1. Room is a structured environment with gates for entering and existing.
+2. Upon entering the class, the methods of the environment type determines what variable transformation is possible.
+3. For every changes introduced to the static state, the corresponding reaction via room parameters to the room response function calculates the observable variables.
+4. The room has always some reflective behavior profile, but the observables collected via instrument depends on the medium and physical laws.

@@ -1,0 +1,7 @@
+program : (where it can run) (what can it do) (who would use it) (how would it be used) (who developed it)
+record  : (where it can run) (what can it do) (who would see it) (how could it be seen) (who published it)
+
+album   : (what are the tracks) (what configuration of speakers required) (who are the musicians) (what is the story)
+music   : (what are the stems)  (what configuration of channels required) (who are the players)   (what is the story)
+mix     : (what are the lines)  (what configuration of routings required) (who are the recorders) (what is the story)
+master  : (what are the inputs) (what configuration of mixtures required) (who are the generators) (what is the story)

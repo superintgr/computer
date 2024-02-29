@@ -1,2 +1,7 @@
 paths : {}
 histories : ()
+observers : []
+
+- Observer starts at definite positions.
++ Histories attached to observables accumulate memories.
+~ Paths with respect to variables for constants determine computations.

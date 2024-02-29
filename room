@@ -6,3 +6,19 @@ gate : [fixed window for realizing state of room]
 2. Upon entering the class, the methods of the environment type determines what variable transformation is possible.
 3. For every changes introduced to the static state, the corresponding reaction via room parameters to the room response function calculates the observable variables.
 4. The room has always some reflective behavior profile, but the observables collected via instrument depends on the medium and physical laws.
+
+
+room, parameters -> variables, medium
+
+- Creating an instance of enclosed space (room)
+- Set of parameters define the observable variables, and medium operator
+- For any permutations of the variables in the set that has at least two different states for the same set of parameters
+.. the effective variable goes to the other set where it is a unity
+- Instance keeps a record of the unity with phase inverted to accomodate relative changes within the space
+
+source, medium -> possible motion -> measurables, sink
+
+- Input coming from a different medium to source position inside a room, obeys the transmission/reflection (propagation) laws of the medium
+- For a set of finite input source presented with a medium, the computation is defined for the possible variables from the set
+
+compute(permutator, set) -> medium[variable] -> measurement(set, medium)

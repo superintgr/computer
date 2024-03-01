@@ -1,0 +1,46 @@
+-1. list all the rooms
+-0. list all the observers
++0. record all the observers
++1. record all the rooms
+
+
+[-1:1+] describes what changes for all known rooms are seen
+[-0:0+] describes what changes for all available observers are conserved
+
+From -1 -> 1+, the linear function of the system taking input and producing output directly or indirectly, contains all the information that it started with at the time the phase change occured.
+
+From -0 ~ 0+, the linear operators of the system taking the possible set of room structures (spacetime coordinates) in order to prepare the observer group (at least one must remain through out) to cause changes (if any) at later stage (computation) before measurement stage.
+
+required: memory device, computation device, interface substrate
+
+**What defines a room instance?**
+- it must have the two things: (computational path), (physical variable)
+
+For the physical properties required by any constructed medium, it must act on the changes made to those variables via transforming other variable objects present within a bounded region of space.
+
+Through all transformation caused within a region of space a computational pathway becomes available as part of the construction of the system.
+
+lib = {library of room structures}
+
+observer = I(S) where S is a set containing {(i, j), .., (j, i)}
+
+Find which lib element supports the permutations of elements in S.
+
+S is a set of at least two different states of a system. The substrate for defining information processing methods:
+
+C[f](S) := S.union({x : f(x) for x in S})
+
+Thus C defines a new set under f transforms over all the elements of S.
+
+
+**What defines an observer instance?**
+
+O is an observer class with set S[O] containing two-state elements such as {(ox, oy), ..., (xx, yy)}.
+
+Each x[i] and x[j] can expand only up to the last elements but only for the first part of the set element and the other becomes disjoint with respect to O[i][-1].
+
+All the other components of the set is derived from a random distribution function which S can be partially (approximate) parameterized with.
+
+O must copy every other element from the pairs to define a new set called I[O].
+
+I[O](S) := {(ox, oy) -> (xx, oo)}

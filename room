@@ -35,3 +35,9 @@ every crosstalk records the global relative crosstalks whenever possible
 partial change to one of the variables
 ppartial change to one of the constants
 := repair guide -> spectrum
+
+**preparation**
+-1. how do you design a dynamical system
+-0. how do you accomodate generator objects inside the system repetoire
++0. how do you prepare the equilibrium with system + observers
++1. how do you define dynamical state given change from equilibrium

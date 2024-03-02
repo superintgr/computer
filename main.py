@@ -119,19 +119,7 @@ import necessary
 # 7. optimization subject to constraints
 # 8. supervision of code execution
 
-## Example use:
-
-env = Environment("env")
-agent = Agent("agent")
-
-env.prepare_task(config)
-env.set_computer(agent)
-agent.set_construction(config)
-
-state = env.get_state()
-measure = state[task] @ agent(state).T
-
-
+## General structure
 # environment prepares a set of observables based on configuration of task dataset provided
 # setting the computer for transforming observables to other valid construction task is specified
 # agent is a recurrent neural network model which samples the observation points inside the environment
@@ -142,22 +130,42 @@ measure = state[task] @ agent(state).T
 # more tasks and agents could be introduced under the same structure
 
 
+[demonstrate an arbitrary usage of the possible dynamical objects]
+.. For example, create an interaction picture as would be seen by a valid observer and simulate what could the perfect code basis would enable.
+    - assuming an ongoing process thread either from direct reference by a terminating group or scheduled sigining in event
+    if status is True:
+        model = load_checkpoint("remote_env.pt")
+    - unconditionally cause internal parametric adaption
+        model.add_node("temp/workspace/")
+        model.adapt_changes()
+        report = model.generate_summary()
+        model.from_functional("save-object")(path="temp/reports/", report)
+
+
+### Explanatory Instructions
+
+# The body contains two parts (possible features via introducing their required basis) and (set of impossible attempts that should not be considered)
+## [description]
+# I would be hinting at what I am aiming at whenever it is not explicitly possible for me to point out.
+# For all other cases, I would describe what it is and how it comes about. As a result, what it is that could be built to support the described statements
+# This is going to be a platform (not to be thought of as complex entity) which has all the defined methods under the construction of the object, such that any future modifications would not require complete overhaul.
+# Among the supporting tools, it should have self optimization capabilities. Those are the features under the class methods and accessible others objects, which makes the instances capable of causing its replication.
+# Replication does not mean any physical and spatial attributes but only the logical components should support copying and correcting any error in the code.
+# There should be a recipe which does not exceed more than few megabytes of memory, onto which the code instructs repairs and activations of instance memory into different instance.
+
+# Create a pair of each new features and build another instance of the class using the partial segment until the solution converges to the limiting point.
+# From the limiting point, tune the parameters of either class until tolerance defined under composite object weighting factor is gained.
+
+
+
+
+
+
+
+
 ## Environment
-
-class Environment:
-    def __init__(self, name):
-        self.name = name
-        self.tasks = []
-        self.actions = {}
-        self.transitions = {}
-
-    def set_task(self, input_state, output_state, counterfactual):
-        raise NotImplementedError
-    def save_checkpoint(self):
-        raise NotImplementedError
-
-    def load_checkpoint(self, path):
-        raise NotImplementedError
+class Environment(object):
+    ..
 
 environment = load_environment("catalyst")
 schedule = load_schedule("catalyst")

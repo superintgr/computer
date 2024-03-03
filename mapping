@@ -44,3 +44,32 @@ All the other components of the set is derived from a random distribution functi
 O must copy every other element from the pairs to define a new set called I[O].
 
 I[O](S) := {(ox, oy) -> (xx, oo)}
+
+
+
+
+import torch
+
+master = torch.nn.RNN(100, 200, 100)
+slave = torch.nn.LSTM(200, 100, 200)
+
+I want to have the master keep the slave under its inner structure and pass subsequent inputs to the inner network until it stops improving.
+When the slave model converges to a limiting case, it processes the rest of the state and brings out the final prediction which an outer optimization/criteria applies to the master.
+
+It's something like this:
+
+while some epsilon is not reached:
+    initial computation, internal state = master(..)
+    prepared batches = partitions the internal state into trial cases
+    history of losses = []
+    for batch in prepared batches:
+        prediction, state = slave(batch, other)
+        ..
+        continue to probe until some condition is met
+    when breaks out: compose the two stages
+    check if epsilon is reached jointly
+    if not: optimize master parameters
+    otherwise break out and continue onto the next outer task.
+
+Additionally, plan is to build a group under master action where slaves are going to be added as limits are reaches quickly.
+Another idea is to detach the inner parts to evolve disjointly and merge discrete while commutatative processes.

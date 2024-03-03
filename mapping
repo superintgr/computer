@@ -47,7 +47,7 @@ I[O](S) := {(ox, oy) -> (xx, oo)}
 
 
 
-
+%% master slave console %%
 import torch
 
 master = torch.nn.RNN(100, 200, 100)
@@ -73,3 +73,54 @@ while some epsilon is not reached:
 
 Additionally, plan is to build a group under master action where slaves are going to be added as limits are reaches quickly.
 Another idea is to detach the inner parts to evolve disjointly and merge discrete while commutatative processes.
+
+%% console code should go here %%
+
+
+Describing transformations as tasks:
+    1. One set of input state and target state compiles a complete construction work
+    2. States are presented in terms of the substrates where the assignment of a transport towards successive transitions onto the associated target state,
+    3. Associated target state is either have to be already present as part of the possible attributes towards which some property of the input state of the substrate allows natural mapping of relative approximations satisfying a linear transfer,
+    4. If the concrete image of the expected substrate attribute is not present, the intermediate processes would require the target attributes to be possible and if necessary such a substrate may be constructed as well before reaching one of those the subset that completes original task,
+    5. The descriptions of constructions would be a mapping or association representing graph and all required information made to exist in the process of converging in order to guarantee any construction reliability,
+    6. It is important that once the desired state is reached, the constructor is kept in the cycle so that it could continue to exist as a transformer for that image,
+
+What are naturally occuring generic resource?
+    1. Could an empty room with air molecules and reverbations made within the enclosed spacw be considered naturally occuring resources?
+    2. Thermoacoustic heat engine and phonon lattice vibration.
+    3. Simulated emission of radiation for sound amplification.
+
+
+%% mmap daemon %%
+
+console space : mmap instance
+config : master and slave channels at path *
+memory : console space * config
+device loader : daemon created for config with memory saved at path */device/loader.py
+saved checkpoint : console state saved at path */checkpoints/master&slave&other/
+
+%% console starter %%
+
+daemon at path (*) starts
+while running, master is loadable
+if master is present, checkpoint loaded from path (*)
+while running, master is callable
+..
+daemon keeps in the background and for all changes in memory since checkpoint (*)
+..
+if change found, locate the channel address and decode slave identity
+if slave found, locate the sample address and decode sample byte
+if sample found, locate the line address and transport line element
+if line found, locate the input address and deliver input amplitude
+if amplitude is found, sample the master state and inject the stream
+if stream is found, sample the master state or inject the stream
+..
+for master response, render the change elements across all memory blocks
+
+%% console slave %%
+
+if daemon is running, check master state
+if master state is available, fetch the device bus
+while True, push change in block as stream and add stream to bus line
+...
+response -> local storage or global block storage

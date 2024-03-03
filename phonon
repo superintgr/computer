@@ -1,0 +1,78 @@
+
+trans : across
+poser : to place
+
+trans + poser : transposer -> transpose
+
+transpose : convert
+convert : transform
+
+
+transistor <- transitive resistance: resistance + trans
+
+
+transposing : cause (two or more things) to change places with each other : switch : swap (around)
+
+swap (around) : transfer to a different place or context : relocate : displace
+
+displace : write or play in a different key or register from the original : reposition
+
+reposition : transfer (a term), with its sign changed, to the other side of an equation : transposition
+
+transposition : the action of transposing something : trans + position -> a ting that has been produced by transposing something
+
+adjoint : relating to or denoting a function or quantity related to again? Want to buy a particular process of transportation : an adjoined matrix, function, or quantity
+
+
+
+I : push R <- I -> I + I’
+I’ : pull R such that I’’ -> R + I’ -> I’’’ - R = 0
+
+I’ starting from ,I -> I, : I’ means I could transpose , -> ‘ or ‘ to ‘’ but no ‘ -> , or ‘’ -> ,’,
+
+If I’ cannot go backwards without change f(I) -> not f(I) + A where A would parametrize the transition further back in towards that direction, if A is some non participating matrix that does not cause any linear change in future transitions while A’ is the reversal of that role hence totally transform any transition in the current direction, then all such backward steps would require successive transformation of sequential changes while the direction is static, all A’ would become the constant change proportion under the reversal of the role (A becoming the A’ for that context).
+
+But A’ is only defined for the opposite effect and all effects keeps the A term negligible via constant diminishing key adaption which is also determined at every point by the matrix A’ m. Therefore A’ could be defined to the such a matrix whose solution vector would reduce not(A’) to not(not(A’))).
+
+
+
+I am planning on using it for something like the following:
+
+import torch
+import torch.nn.functional as F
+
+# Parameters
+duration = 2  # Duration in seconds
+sample_rate = 50  # Number of samples per second
+time_steps = int(duration * sample_rate)
+num_atoms = 100  # Number of atoms in the lattice
+spring_constant = 1.0  # Spring constant
+mass = 1.0  # Mass of each atom
+
+# Time array
+t = torch.linspace(0, duration, time_steps)
+
+# Lattice positions
+positions = torch.arange(0, num_atoms, dtype=torch.float32)
+
+# Simulated lattice displacement (phonon vibration)
+displacement = torch.zeros_like(positions)
+for _ in range(10):  # Number of vibration modes
+    omega = torch.sqrt(spring_constant / mass)
+    displacement += torch.sin(2 * np.pi * omega * t) * torch.sin(np.pi * positions)
+
+# Normalize displacement
+displacement /= torch.max(torch.abs(displacement))
+
+
+variable : {(step, position), ..., (array index, lattice index)}
+displacement : position within the lattice (graph) space
+    - coordinate elements are permuted
+    - associated variable pairs commute over action
+iterator : N equals the number of elementary modes
+    - each mode element corresponds to modal dynamics
+    - dynamical variables construct patterns of vibratory assignments
+    - each iteration constructs the following:
+        . selection of angular momentum multiplier via normalized root at partial fraction element of effective mass contribution
+        . cumulative displacement vector constructs the moving energy state at sequential step applied across all positional elements following the magnituds of the line elements carrying the constructor
+        . final divergence from the last state of the atoms at the lattice points corresponds to the normalized energy functional of the lattice constructor with respect to the whole set of positional attributes.

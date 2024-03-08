@@ -57,4 +57,8 @@ class Object:
         # Terminating node should be different for every realizable pictures.
 
     def set_terminal(self, other):
-        self.terminal = other
+        if self |= other:
+            self.terminal = other
+
+    def uncompute(self):
+        self.set_terminal(self)

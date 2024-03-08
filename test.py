@@ -10,6 +10,35 @@
 +0. 
 """
 
+#### 1- ####
+"""Finding available handler while scanning for changes in memory blocks
+
+list_of_handlers = [handler.py, runner.py, seeker.py, ..]
+memory_blocks = [disk1, disk2, disk3, ...]
+changes_since_scanned = [k%, n%, m%]
+scanning_logs = {}
+
+if change:
+    disk = rank_regions(change)
+    subclass = rank_domains(disk, change)
+    locals = rank_ranges(subclass, disk, change)
+    nodes = rank_neighbors(locals, subclass, disk, change)
+
+    for node in nodes:
+        antinode = node(change, memory_blocks)
+        handler = list_of_handlers.index(antinode)
+        session = rectify(handler)
+        while True:
+            q = session(antinode, node, change)
+            if q:
+                break
+        change += q
+    
+
+
+"""
+
+
 class Test:
     ..
 

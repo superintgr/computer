@@ -1,0 +1,37 @@
+[batch, sequence, embedding]
+
+[substrate]
+- attributes (possible context patterns)
+- properties (possible completion patterns)
+
+class Substrate(object):
+    def __init__(self, model):
+        self.model = model
+        self.static = []
+        self.dynamic = []
+        self.state = []
+        self.patterns = {}
+
+    def prepare(self, context):
+        self.static.append(context)
+
+    def compute(self, construct):
+        completion = self.model(self.static[-1] + construct)
+        self.dynamic.append(completion)
+
+    def measure(self, expectation):
+        error = self.model(self.dynamic[-1], labels=expectation)
+        self.state.append(error)
+
+    def other(self, context, construction):
+        self.patterns[context] = construction
+
+    def compile(self, label):
+        pass
+
+    def load(self, path):
+        pass
+
+    def update(self):
+        pass
+

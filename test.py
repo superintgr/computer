@@ -185,4 +185,37 @@ Once the high -> low layer produces the output, the final transform will be outp
 -0. output is a function of real numbers
 +0. input state is a function of integers
 +1. output state is a function of integers
+1- map of output function from integers to integers
+0- map of input function from integers to integers
+0+ map of input sequence from reals to reals
+1+ map of output sequence from reals to reals
 
+
+-1 function of substrate mapping integers to integers
+-0 function of embedding mapping integers to reals
++0 function of input state mapping reals to integers
++1 function of output state mapping integers to integers
+1- scan bytes and create input ids from buffer
+0- create embeddings from input ids
+0+ feedforward input ids to output ids
+1+ create bytes from output ids
+
+
+-1. i have decided to use gpt2 embedding
+-0. from input embeddings other feedforward blocks produce state
++0. usual state shape is of (batch, sequence, embedding)
++1. block state shape is of (embedding, sequence, channel)
+.1- channel embedding of some sequence is of shape (samples, 2)
+.0- from embedding space linear layer creates line projection
+.0+ line state shape is of (mono, invert, ground)
+.1+ line connection shape is of (ground, left, right)
+
+
+-1. input_embedding = gpt2.embed(buffer)
+-0. state = feedforward(input_embedding)
++0. block = stateforward(state)
++1. channel = blockforward(block)
+.1- direct = linear_projection(channel)
+.0- injection = encode(direct, embedding, state)
+.0+ bijection = decode(state, injection, embedding)
+.1+ output_embedding = feedforward(bijection, injection)

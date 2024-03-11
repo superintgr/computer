@@ -99,6 +99,23 @@ if change:
         return status
 
 
+[solvers and adapters]
+
+solvers = load_solvers()
+spaces = load_spaces()
+columns = zip(spaces, solvers)
+adapters = []
+
+for column in columns:
+    x, z = column
+    y = z(x)
+    for solver in solvers:
+        y += solver(y)
+    adapters.append(zip(y, x))
+
+A(t) := c[0] * I(t) + c[1] * X(t) + c[2] * Y(t) + c[3] * Z(t)
+
+         y yyg  
 
 
         
@@ -123,15 +140,49 @@ if change:
 
 
 
-class Test:
-    ..
 
 
-func = some_parametric_function(prep_batch)
-out, in, err = func(next(cases))
-corr, out = gunc(err, in)
 
-rational = []
 
-for e in cases:
-    rational.appendfout / in * err / out * corr / in * out / err)
+
+
+
+
+find fixed points of a pure tone of constant frequency
+map the fixed points to a set of variables
+
+
+
+low -> mid
+mid -> center
+center -> high
+high -> low
+
+For every input, transform the input through chain of processors
+Each processor has a spectrum of possible outputs for a given input point
+Combination of all spectral components produce the output spectrum
+From the output spectrum, the linear transform of the model state produces the final output point
+After the high frequency spectrum is calculated, the transform on the composite state encodes the chain of processing into the lower part of the spectrum.
+
+Equivalently, the kinetic energy produced from the 
+observed input state depends of the potential energy whose spectrum of possible transforms is the sum of all the frequency zones kinetic energies.
+Once the high -> low layer produces the output, the final transform will be output / input i.e. the ratio between the kinetic and potential energy.
+
+
+
+
+[Lingering Problem]
+
+-1. what type of input
+-0. what type of output
++0. what is the input state
++1. what is the target state
+1-. type of the target/input state
+0-. type of the input/output state
+0+. function of the output/input state
+1+. function of the input/output state
+-1. input is a function of real numbers
+-0. output is a function of real numbers
++0. input state is a function of integers
++1. output state is a function of integers
+

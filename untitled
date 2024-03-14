@@ -1,37 +1,41 @@
-[batch, sequence, embedding]
+lines = [] # All the available services for communication
+channels = [] # All the registered channels across all lines.
+subscribers = [] # Dynamically updating list of subscription profiles.
+routers = [] # List of all the registered routing devices at subscription points.
+stations = [] # List of all the registered stations that broadcast channel functions.
+interfaces = [] # List of all the device interface connecting subscribed channels through routers.
+costs = [] # Records of all the cost associated with each line and communication mediums.
 
-[substrate]
-- attributes (possible context patterns)
-- properties (possible completion patterns)
+class Subscriber:
+    def __init__(self, line, router, channels, cost):
+        self.channels = channels
+        self.router = router
+        self.line = line
+        self.cost = cost
+        self.statements = []
+        self.device = None
+        self.notifications = []
+        self.messages = []
+        self.activate = False
 
-class Substrate(object):
-    def __init__(self, model):
-        self.model = model
-        self.static = []
-        self.dynamic = []
-        self.state = []
-        self.patterns = {}
+    def resolve_statement(self, matrix):
+        for statement in statements:
+            self.cost *= matrix @ statement.T
+            self.set_alert("Cost updated")
 
-    def prepare(self, context):
-        self.static.append(context)
-
-    def compute(self, construct):
-        completion = self.model(self.static[-1] + construct)
-        self.dynamic.append(completion)
-
-    def measure(self, expectation):
-        error = self.model(self.dynamic[-1], labels=expectation)
-        self.state.append(error)
-
-    def other(self, context, construction):
-        self.patterns[context] = construction
-
-    def compile(self, label):
-        pass
-
-    def load(self, path):
-        pass
-
-    def update(self):
-        pass
-
+    def initialize(self, device, weights):
+        balance = 0
+        for channel in self.channels:
+            feed = self.router @ device.T + self.line
+            forward = weights @ channel.T + feed
+            self.statements.append(forward)
+            self.set_alert("New statement attached")
+            balance += 1 - feed**2
+        if balance >= self.cost:
+            self.activate = True
+            self.cost = balance / self.cost
+            self.set_alert("Cost updated")
+            self.device = device
+            self.add_message("{} is now active!".format(device))
+            self.set_alert("New message received")
+       self.set_alert("Failed to activate") 

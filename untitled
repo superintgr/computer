@@ -39,3 +39,26 @@ class Subscriber:
             self.add_message("{} is now active!".format(device))
             self.set_alert("New message received")
        self.set_alert("Failed to activate") 
+
+
+class Line:
+    def __init__(self, left, front, right):
+        self.left = left
+        self.front = front
+        self.right = right
+        self.queue = []
+        self.buffer = []
+
+    def attach(self, vector):
+        message = self.solve(vector, self.left)
+        self.buffer.append(message)
+
+    def transmit(self):
+        vector = self.buffer[-1]
+        message = self.solve(vector, self.front)
+        self.queue.append(message)
+
+    def release(self):
+        vector = self.queue.pop(0)
+        message = self.solve(vector, self.right)
+        self.buffer.pop()

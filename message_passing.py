@@ -1,4 +1,3 @@
-
 network = {}
 
 def new_graph(label, capacity, volume):

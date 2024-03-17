@@ -183,7 +183,23 @@ If y can be distinguished from x, then x is also distinguishable.
 If g is a generic resource and the task G => {g -> C[G]} with side effect being possible where C[G] is the constructor for G,
 . then G is implicated in the effect of G having been possible <=> existence of one (h)(G * {g -> h}) being possible also.
 . NOTE: * refers to the cartesian product
+
+[sampling resource]
+One idea is to record the pressure waves from empty spaces and other acoustic environments to collect acoustic energy to tranduce into some regular networks of constructors.
+. Every regular networks of tasks are possible tasks.
+
+What form should the standard mining algorithm be programmed in considerations with?
+. whatever form the data may take, information substrate would enable interoperability property in the chain anyway.
+
+[composite midside] If two channels Z and T, each have some information variable that could be combined together, then the combination of the two variables would construct a new substrate (Y) whose attributes X would contain the cartesian products of Z and T.  
 """
+
+                                                                                                                      
+class Generic:
+    source : empty space
+    criterion : possibility/impossibilty
+    
+
 
 
 
@@ -201,5 +217,10 @@ class Measurement:
 """
 **Measurement**
 
-BRB
+Computing the union of all {x -> psi[x]} for some observable X with x in it, the measurement is going to be a non-perturbating one. In short, all we care about is whether the transformation is possible or not which implies the possibility of being able to measure with arbitrary accuracy or find no regularity for learning such attribute at all.
+. For observables that are possibly be a physical variable that could have sharp observables or perhaps not for some perticular transformation, but nevertheless that alone should not prohibit any measurement of that variable with arbitrary accuracy since we can always learn about the outcome through requiring the variable to be factoring into some other computation task and whose net construction from that additive state would make the measurement exact.
+
+All we are going to consider in terms of dynmical evolution of those subtrates consists of permutations and cloning operations that are made to preserve logical reversibility during all processing of information across the entire stack.
+
+
 """

@@ -1,0 +1,126 @@
+-1. list all the rooms
+-0. list all the observers
++0. record all the observers
++1. record all the rooms
+
+
+[-1:1+] describes what changes for all known rooms are seen
+[-0:0+] describes what changes for all available observers are conserved
+
+From -1 -> 1+, the linear function of the system taking input and producing output directly or indirectly, contains all the information that it started with at the time the phase change occured.
+
+From -0 ~ 0+, the linear operators of the system taking the possible set of room structures (spacetime coordinates) in order to prepare the observer group (at least one must remain through out) to cause changes (if any) at later stage (computation) before measurement stage.
+
+required: memory device, computation device, interface substrate
+
+**What defines a room instance?**
+- it must have the two things: (computational path), (physical variable)
+
+For the physical properties required by any constructed medium, it must act on the changes made to those variables via transforming other variable objects present within a bounded region of space.
+
+Through all transformation caused within a region of space a computational pathway becomes available as part of the construction of the system.
+
+lib = {library of room structures}
+
+observer = I(S) where S is a set containing {(i, j), .., (j, i)}
+
+Find which lib element supports the permutations of elements in S.
+
+S is a set of at least two different states of a system. The substrate for defining information processing methods:
+
+C[f](S) := S.union({x : f(x) for x in S})
+
+Thus C defines a new set under f transforms over all the elements of S.
+
+
+**What defines an observer instance?**
+
+O is an observer class with set S[O] containing two-state elements such as {(ox, oy), ..., (xx, yy)}.
+
+Each x[i] and x[j] can expand only up to the last elements but only for the first part of the set element and the other becomes disjoint with respect to O[i][-1].
+
+All the other components of the set is derived from a random distribution function which S can be partially (approximate) parameterized with.
+
+O must copy every other element from the pairs to define a new set called I[O].
+
+I[O](S) := {(ox, oy) -> (xx, oo)}
+
+
+
+%% master slave console %%
+import torch
+
+master = torch.nn.RNN(100, 200, 100)
+slave = torch.nn.LSTM(200, 100, 200)
+
+I want to have the master keep the slave under its inner structure and pass subsequent inputs to the inner network until it stops improving.
+When the slave model converges to a limiting case, it processes the rest of the state and brings out the final prediction which an outer optimization/criteria applies to the master.
+
+It's something like this:
+
+while some epsilon is not reached:
+    initial computation, internal state = master(..)
+    prepared batches = partitions the internal state into trial cases
+    history of losses = []
+    for batch in prepared batches:
+        prediction, state = slave(batch, other)
+        ..
+        continue to probe until some condition is met
+    when breaks out: compose the two stages
+    check if epsilon is reached jointly
+    if not: optimize master parameters
+    otherwise break out and continue onto the next outer task.
+
+Additionally, plan is to build a group under master action where slaves are going to be added as limits are reaches quickly.
+Another idea is to detach the inner parts to evolve disjointly and merge discrete while commutatative processes.
+
+%% console code should go here %%
+
+
+Describing transformations as tasks:
+    1. One set of input state and target state compiles a complete construction work
+    2. States are presented in terms of the substrates where the assignment of a transport towards successive transitions onto the associated target state,
+    3. Associated target state is either have to be already present as part of the possible attributes towards which some property of the input state of the substrate allows natural mapping of relative approximations satisfying a linear transfer,
+    4. If the concrete image of the expected substrate attribute is not present, the intermediate processes would require the target attributes to be possible and if necessary such a substrate may be constructed as well before reaching one of those the subset that completes original task,
+    5. The descriptions of constructions would be a mapping or association representing graph and all required information made to exist in the process of converging in order to guarantee any construction reliability,
+    6. It is important that once the desired state is reached, the constructor is kept in the cycle so that it could continue to exist as a transformer for that image,
+
+What are naturally occuring generic resource?
+    1. Could an empty room with air molecules and reverbations made within the enclosed spacw be considered naturally occuring resources?
+    2. Thermoacoustic heat engine and phonon lattice vibration.
+    3. Simulated emission of radiation for sound amplification.
+
+
+%% mmap daemon %%
+
+console space : mmap instance
+config : master and slave channels at path *
+memory : console space * config
+device loader : daemon created for config with memory saved at path */device/loader.py
+saved checkpoint : console state saved at path */checkpoints/master&slave&other/
+
+%% console starter %%
+
+daemon at path (*) starts
+while running, master is loadable
+if master is present, checkpoint loaded from path (*)
+while running, master is callable
+..
+daemon keeps in the background and for all changes in memory since checkpoint (*)
+..
+if change found, locate the channel address and decode slave identity
+if slave found, locate the sample address and decode sample byte
+if sample found, locate the line address and transport line element
+if line found, locate the input address and deliver input amplitude
+if amplitude is found, sample the master state and inject the stream
+if stream is found, sample the master state or inject the stream
+..
+for master response, render the change elements across all memory blocks
+
+%% console slave %%
+
+if daemon is running, check master state
+if master state is available, fetch the device bus
+while True, push change in block as stream and add stream to bus line
+...
+response -> local storage or global block storage

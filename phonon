@@ -1,0 +1,116 @@
+
+trans : across
+poser : to place
+
+trans + poser : transposer -> transpose
+
+transpose : convert
+convert : transform
+
+
+transistor <- transitive resistance: resistance + trans
+
+
+transposing : cause (two or more things) to change places with each other : switch : swap (around)
+
+swap (around) : transfer to a different place or context : relocate : displace
+
+displace : write or play in a different key or register from the original : reposition
+
+reposition : transfer (a term), with its sign changed, to the other side of an equation : transposition
+
+transposition : the action of transposing something : trans + position -> a ting that has been produced by transposing something
+
+adjoint : relating to or denoting a function or quantity related to again? Want to buy a particular process of transportation : an adjoined matrix, function, or quantity
+
+
+
+I : push R <- I -> I + I’
+I’ : pull R such that I’’ -> R + I’ -> I’’’ - R = 0
+
+I’ starting from ,I -> I, : I’ means I could transpose , -> ‘ or ‘ to ‘’ but no ‘ -> , or ‘’ -> ,’,
+
+If I’ cannot go backwards without change f(I) -> not f(I) + A where A would parametrize the transition further back in towards that direction, if A is some non participating matrix that does not cause any linear change in future transitions while A’ is the reversal of that role hence totally transform any transition in the current direction, then all such backward steps would require successive transformation of sequential changes while the direction is static, all A’ would become the constant change proportion under the reversal of the role (A becoming the A’ for that context).
+
+But A’ is only defined for the opposite effect and all effects keeps the A term negligible via constant diminishing key adaption which is also determined at every point by the matrix A’ m. Therefore A’ could be defined to the such a matrix whose solution vector would reduce not(A’) to not(not(A’))).
+
+
+
+I am planning on using it for something like the following:
+
+import torch
+import torch.nn.functional as F
+
+# Parameters
+duration = 2  # Duration in seconds
+sample_rate = 50  # Number of samples per second
+time_steps = int(duration * sample_rate)
+num_atoms = 100  # Number of atoms in the lattice
+spring_constant = 1.0  # Spring constant
+mass = 1.0  # Mass of each atom
+
+# Time array
+t = torch.linspace(0, duration, time_steps)
+
+# Lattice positions
+positions = torch.arange(0, num_atoms, dtype=torch.float32)
+
+# Simulated lattice displacement (phonon vibration)
+displacement = torch.zeros_like(positions)
+for _ in range(10):  # Number of vibration modes
+    omega = torch.sqrt(spring_constant / mass)
+    displacement += torch.sin(2 * np.pi * omega * t) * torch.sin(np.pi * positions)
+
+# Normalize displacement
+displacement /= torch.max(torch.abs(displacement))
+
+
+variable : {(step, position), ..., (array index, lattice index)}
+displacement : position within the lattice (graph) space
+    - coordinate elements are permuted
+    - associated variable pairs commute over action
+iterator : N equals the number of elementary modes
+    - each mode element corresponds to modal dynamics
+    - dynamical variables construct patterns of vibratory assignments
+    - each iteration constructs the following:
+        . selection of angular momentum multiplier via normalized root at partial fraction element of effective mass contribution
+        . cumulative displacement vector constructs the moving energy state at sequential step applied across all positional elements following the magnituds of the line elements carrying the constructor
+        . final divergence from the last state of the atoms at the lattice points corresponds to the normalized energy functional of the lattice constructor with respect to the whole set of positional attributes.
+
+
+
+
+[tokenizing or identiphizing]
+- what is not intended: creating a dictionary pairing each instances of characters or tokens to numbers or vectors.
+- what is got intended: constructing a set associating one of variable from a set of two or more instances or states to one of the variable from a set of at least two instances or parameters.
+
+[implication relating static to dynamic]
+- implication from what: determines what could be measured or whether measures could be attained.
+- implication to which: determines what could be implied and that chooses possible mapping.
+- dynamic, static: pairs cause states that implies motion via dynamic variable to land at mapped static definitions.
+- static, dynamic: pairs imply possible states as resulting from choosing one of mutable variable defined while keeping dynamical motion valid.
+- dynamic, state: is the result of starting with a set of static parameters each of which is pair whose corresponding values change as dynamical parameters for the motion and causes the halt discretely at definite measurable state.
+
+[measurable definition and statefulness]
+- measure criteria: is a set of values of which one of the key or implier is paired with one of the other element of a set of two-state parameter state.
+- two-state system: is a construction of substrate where any of the computation variable is paired as permutation of one of any other element from the same set and each mutation of the keys could map back to another possible key.
+- measurement state: is the description of the substrate where any information variable implying to any of the information variable which is part of the definitions of computatable sets and the computation performed on the associated computable function would contain the value as natural implication of the operation.
+- natural operation: is the description of some known quantity and associations of some information quantity as carrying through some medium powered by those substrates whose construction is peformed using naturally occuring genetic resources and the description holds consistent for all instance derived from the describing medium as constructing each of the subsidiary substrates where the instance is the product of direct attributes of the original explainer.
+- statefulness: is the property of any substrate whose medium is capable of delivering known quantity satisfying some already measured critetion and continues to supply the same static quantity indefinetely.
+
+[constants and variables]
+- constants: are the set of parameters defined within a substrate to which all variable elements provides ways to evaluate their identities.
+- variables: are the set of parameters defined within a substrate to which all other substrates provides functionals which reflects at least one functional, the executables for which would provide a multiplier.
+- multiplier: is an information parameter with respect to whose change an extensive quantity would form exceptation value assigning the discrete intensive feature as fundable element.
+- fundability: is the property of a substrate through which communication between any two disjoint variables cause unity in both substrates.
+- unity: is the attribute of a substrate which depends on an extensive quantity as parameterizing some constant instrinsic quantity of a set of two-level executables and every second order function of the executable of the functional squares the amplitude associated to the constant.
+- communication: is the property of two substrate connected through a medium that has one of line elements uniquely seperating one of the line elements in each of the two substrates intrinsic attributes such that any change made to one of the line is reflected exactly across all the associates.
+- medium: is a substrate that constructs at least the set of information variables as intrinsic properties and could be also extended by a set of computation variables but must provide communication between all of the mutable associations as permutation operations on the intensive quantities.
+
+[information and neural nets]
+- neural net: is a structure defining information medium connecting all the pathways from observables to observables using definite complexity in computation substrate construction tasks.
+- nets: are interconnected substrates through nodes whose terminal points are set of node elements pairs that could have had an antinode component somewhere along the direct product of any other node carrying pair in the same set.
+- node: is a quantity that could be changed to form antinode and the reversal of state returns the static attribute represented at that.
+- antinode: is the opposite of node by the variable state defined at the attribute for the associated static attribute from which change represents only single path back.
+- information: is the property of a structure facillated by constructions of the fundamental elements which could not be changed without changing the fundamental properties of the structure.
+- fundamental: is the attribute of any dynamical system where the variation at antinode points translates to variation at the nodes for all change legitimate.

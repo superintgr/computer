@@ -221,6 +221,5 @@ Computing the union of all {x -> psi[x]} for some observable X with x in it, the
 
 All we are going to consider in terms of dynmical evolution of those subtrates consists of permutations and cloning operations that are made to preserve logical reversibility during all processing of information across the entire stack.
 
-
-Can this be seen?
+    Apparantly only not by googly.
 """

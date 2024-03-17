@@ -85,3 +85,37 @@ It is a property of a substrate where it is able to copy certain attributes from
 For some substrate that is reversible information processing media could use generic naturally occuring resources to construct new
 . media for computation or any other information processing task.
 """
+
+
+
+def construct_memory(required_volume, volatile_block, storage_volume):
+    information = []
+    computation = []
+    measurement = []
+    
+    for block in required_volume:
+        for space in volatile_block:
+            for bin in storage_volume:
+                x, y, z = (block, space), (space, bin), (bin, block)
+                information.append(x)
+                computation.append(y)
+                measurement.append(z)
+            orders = permutations(zip(block, space))
+            yield orders
+        tasks = permutations(block, zip(information, computation, measurement))
+        yield tasks
+    return information, computation, measurement
+
+
+class Measurement:
+    observable : computation
+    attribute  : variable
+    substrate  : wave
+    task       : disjoint attribute from computation -> physical variable with sharp observable or locally inaccessible for pertubation
+
+
+"""
+**Measurement**
+
+BRB
+"""

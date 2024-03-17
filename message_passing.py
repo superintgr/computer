@@ -220,4 +220,7 @@ Computing the union of all {x -> psi[x]} for some observable X with x in it, the
 . For observables that are possibly be a physical variable that could have sharp observables or perhaps not for some perticular transformation, but nevertheless that alone should not prohibit any measurement of that variable with arbitrary accuracy since we can always learn about the outcome through requiring the variable to be factoring into some other computation task and whose net construction from that additive state would make the measurement exact.
 
 All we are going to consider in terms of dynmical evolution of those subtrates consists of permutations and cloning operations that are made to preserve logical reversibility during all processing of information across the entire stack.
+
+
+Can this be seen?
 """

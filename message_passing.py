@@ -223,8 +223,14 @@ All we are going to consider in terms of dynmical evolution of those subtrates c
 
 [differed interest] is where (if) the substrate persists with the observables corresponding to the eigenvalues of the wave function being forwarded onto a the task of computing {(x, x') -> (y[x], `outcome was x`)}.
 . Here y is function of x at the next measurement step while the previous step had X as its determinant. Now the determinant is some other observable where x may not be sharp but the corresponding possible element encodes the entailment via y with the annotation saying x was measured to be sharp.
-                                                                                                                                                                                   This constitutes the measurement of the observable because the subsequent transformation was able to access the subspace also the injection of such disjoint attributes into its substrate implies that these attributes are indeed information bearing properties of the medium which therefore is an information media.
-                                                                                                                                                                                   
-                                                                                                                                                                                   
-
+. This constitutes the measurement of the observable because the subsequent transformation was able to access the subspace also the injection of such disjoint attributes into its substrate implies that these attributes are indeed information bearing properties of the medium which therefore is an information media.
 """
+
+                                                                                                                        [measurer of X] When some measurer of a variable X would produce sharp variable whenever presented with some set {a} of proper subset of not(not(X)), all other measurers of X would too.
+
+_THE POSSIBLE TITLES IN THE SOLUTION-PROBLEM SPACE_
+__It is more like the space covering the programmable elements of the joint subspace which lets any of their realization even possible. So I am looking for the unique space of programmable paradigms in the solution path from any direction and this should eliminate all the unnecessary ettiquetes while directly reducing the whole face of the graph.
+
+More specifically, I am wondering if it could be possible to target and close-in on a selected set of regions of program spaces with the filtering of all the paradigms that does not directly map the possible and inevitable dynamical variables of the binary voltage set that parametrizes the programmable regions. It shall be those unique sets that excludes all the other legitimate programmable constructs as its most discrete conception of the set of code objects that runs, however instead it should not be so legitimate in my region of interested spaces, whereby the only legitimate + programmable + discrete + tractable piece of the possible space should it yield the ultimate fitting of that correspondence information.
+
+This should be a closed set of topological units.

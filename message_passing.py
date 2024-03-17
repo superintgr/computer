@@ -1,3 +1,57 @@
+
+network = {}
+
+def new_graph(label, capacity, volume):
+    """
+    Creates a labeled graph with maximum capacity and differentiable volume amount.
+
+    Args:
+    - label : string containing ascii characters.
+    - capacity : maximum sampling rate.
+    - volume : block size per step.
+
+    Returns: A channel for driving the node and the object structure for integrating information.
+    """
+    channel = create_device(capacity, volume)
+    record = {
+        "network" : label,
+        "object"  : channel,
+        "capacity" : capacity,
+        "volume" : volume
+    }
+    return record, channel
+
+def new_line(shape, balanced=False):
+    """
+    Create a parametrized line object.
+
+    Args:
+    - shape : dimensionality of the flow process.
+    - balanced : if phase inverted transport required.
+
+    Returns: Line object parametrized randomly.
+    """
+    line = create_linear(shape, balanced)
+    return line
+    
+def setup_transmission(source, substrate, sink):
+    """
+    Creates transmission graph dual to the substrate.
+
+    Args:
+    - source : identity node within the subsystem.
+    - substrate : graph structure composed of channels of information flow.
+    - sink : conjugate node within the subsystem.
+    """
+    
+
+
+
+
+
+
+
+
 """
 **Message Passing Module**
 

@@ -221,5 +221,10 @@ Computing the union of all {x -> psi[x]} for some observable X with x in it, the
 
 All we are going to consider in terms of dynmical evolution of those subtrates consists of permutations and cloning operations that are made to preserve logical reversibility during all processing of information across the entire stack.
 
-    Apparantly only not by googly.
+[differed interest] is where (if) the substrate persists with the observables corresponding to the eigenvalues of the wave function being forwarded onto a the task of computing {(x, x') -> (y[x], `outcome was x`)}.
+. Here y is function of x at the next measurement step while the previous step had X as its determinant. Now the determinant is some other observable where x may not be sharp but the corresponding possible element encodes the entailment via y with the annotation saying x was measured to be sharp.
+                                                                                                                                                                                   This constitutes the measurement of the observable because the subsequent transformation was able to access the subspace also the injection of such disjoint attributes into its substrate implies that these attributes are indeed information bearing properties of the medium which therefore is an information media.
+                                                                                                                                                                                   
+                                                                                                                                                                                   
+
 """

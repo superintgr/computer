@@ -164,6 +164,33 @@ def construct_memory(required_volume, volatile_block, storage_volume):
     return information, computation, measurement
 
 
+# Naturally ocurring substrates are necessary for finding the gap constructor.
+# Suppose there is a task on other substrates and the task is setup on this
+# new substrate as coming from constructions of the output states towards
+# the output state of this substrate where it first comes the input state of
+# the current substrate. This kind of chaining and composing rules would work
+# as expected but I really don't have (this) substrate nor do I have an
+# expected output state on which it would have consisted their mappingz
+
+
+"""
+[cartesian product] of two substrates is pair-wise distinguishable.
+If the combination of two substrates are distinguishable then the cartesian product of the two is also distinguishable.
+If the two substrates have attributes that are information variables, their cartesian product is also an information variable.
+If y can be distinguished from x, then x is also distinguishable.
+
+[generic resource] from naturally occuring sources could be used to construct unlimited number of information processing substrates.
+If g is a generic resource and the task G => {g -> C[G]} with side effect being possible where C[G] is the constructor for G,
+. then G is implicated in the effect of G having been possible <=> existence of one (h)(G * {g -> h}) being possible also.
+. NOTE: * refers to the cartesian product
+"""
+
+
+
+
+
+
+
 class Measurement:
     observable : computation
     attribute  : variable

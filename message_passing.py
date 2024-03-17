@@ -42,7 +42,10 @@ def setup_transmission(source, substrate, sink):
     - source : identity node within the subsystem.
     - substrate : graph structure composed of channels of information flow.
     - sink : conjugate node within the subsystem.
+
+    Returns: New channel with lines setup between possible pathways.
     """
+    pass
     
 
 

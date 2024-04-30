@@ -1,16 +1,16 @@
-
+- (transpose) ({g : Č, Č : tau, tau : possible, {g : tau} : {Č : possible}, {({Č : possible}, {tau : possible})} : ({g : {Č : {tau : possible}}} : tau}, {Č : {tau : {possible : {g : Č}}}})} : possible})
 trans : across
 poser : to place
-
 trans + poser : transposer -> transpose
-
 transpose : convert
 convert : transform
-
-
+-- (transform) {x : .} -> {. : y}
+--- (convert) (., not(.)) or (not(.), .) ~ (., .) | (not(.), not(.)) or (not(.), not(.)) & (., .) | (not(not(.)), not(not(.)))
 transistor <- transitive resistance: resistance + trans
-
-
+---- (transitive) property (/|) & (|\) ~ (/|\) or (\|/)
+----- (resistive) attribute (.|) & (|.) & (.| not |.)
+------ (transistor) resistive behavior encoded at the each node and then executed by the antinode to generate the same output for every single project that was created.
+------- (transpose) (swap, X|Y) and (swap, (Y|X)
 transposing : cause (two or more things) to change places with each other : switch : swap (around)
 
 swap (around) : transfer to a different place or context : relocate : displace
@@ -32,7 +32,7 @@ I’ starting from ,I -> I, : I’ means I could transpose , -> ‘ or ‘ to �
 
 If I’ cannot go backwards without change f(I) -> not f(I) + A where A would parametrize the transition further back in towards that direction, if A is some non participating matrix that does not cause any linear change in future transitions while A’ is the reversal of that role hence totally transform any transition in the current direction, then all such backward steps would require successive transformation of sequential changes while the direction is static, all A’ would become the constant change proportion under the reversal of the role (A becoming the A’ for that context).
 
-But A’ is only defined for the opposite effect and all effects keeps the A term negligible via constant diminishing key adaption which is also determined at every point by the matrix A’ m. Therefore A’ could be defined to the such a matrix whose solution vector would reduce not(A’) to not(not(A’))).
+But A’ is only defined for the opposite effect and all effects keeps the A term negligible via constant diminishing key adaption which is also determined at every point by the matrix A’ m. Therefore A’ could be defined as one such matrix whose solution vector would reduce not(A’) to not(not(A’))).
 
 
 

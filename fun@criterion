@@ -1,1 +1,9 @@
- 
+standard keywords: (implications, attributions, properties, assertions, knowledge, information, transformation, construction, task, constructor)
+
+- implication is about (S) which has (š, f(ś) as {key : value} style structure
+-- implied case I : some x in Ś for all x in Š, where {x : ś} ~ {f(x) : ś}
+--- Ī is an assertion about x's in S such that (I, f) and (f, x) and (x, Ī) maps {Ī : f(x)} and {ś : I} and {I[s] : Ī[f](x)}
+---- if the mapping could be carried out for any x in S that yields ś and f(x) that results in S[ś] being one of š, Ī is transformed into I for all such x and not otherwise
+--- I is an assertion about š's in Ī such that (S, x) and (ś, f) and (f, S) maps {s : š[Ī]} and {f : Ī} and {S[x] : š[I](f)}
+-- implied case S : some ś in Ī for all f in I, where {f : x} ~ {ś[Ī] : x}
+- implication is about (I) which has (f, ś[x] as {key : value} style structure
